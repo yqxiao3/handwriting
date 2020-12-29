@@ -1,2 +1,2 @@
 # handwriting
-Learning project for hand-writing recognization
+Learning project for hand-writing recognition
