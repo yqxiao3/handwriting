@@ -28,8 +28,10 @@ import network
 
 
 net = network.Network([784, 30, 10])
-net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
-
+net.SGD(training_data, 5, 10, 3.0, test_data=test_data)
+print("Done")
+if True:
+    exit(0)
 
 # ----------------------
 # - network2.py example:

@@ -70,6 +70,10 @@ class Network(object):
                 for k in range(0, n, mini_batch_size)]
             for mini_batch in mini_batches:
                 self.update_mini_batch(mini_batch, eta)
+            print("Biases")
+            print(self.biases)
+            print("Weight")
+            print(self.weights)
             if test_data:
                 print("Epoch {} : {} / {}".format(j, self.evaluate(test_data), n_test))
             else:
