@@ -28,8 +28,8 @@ import network
 
 
 net = network.Network([784, 30, 10])
-#net.SGD(training_data, 1, 10, 3.0, test_data=test_data)
-print("finish")
+net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
+
 
 # ----------------------
 # - network2.py example:
@@ -148,19 +148,19 @@ net.SGD(training_data, 30, 10, 0.1,
 #         print('Used the cpu')
 #     else:
 #         print('Used the gpu')
-# #Perform check:
-# testTheano()
+# Perform check:
+#testTheano()
 
 
 # ----------------------
 # - network3.py example:
-# import network3
-# from network3 import Network, ConvPoolLayer, FullyConnectedLayer, SoftmaxLayer # softmax plus log-likelihood cost is more common in modern image classification networks.
-#
-# # read data:
-# training_data, validation_data, test_data = network3.load_data_shared()
-# # mini-batch size:
-# mini_batch_size = 10
+import network3
+from network3 import Network, ConvPoolLayer, FullyConnectedLayer, SoftmaxLayer # softmax plus log-likelihood cost is more common in modern image classification networks.
+
+# read data:
+training_data, validation_data, test_data = network3.load_data_shared()
+# mini-batch size:
+mini_batch_size = 10
 
 # chapter 6 - shallow architecture using just a single hidden layer, containing 100 hidden neurons.
 '''
